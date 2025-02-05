@@ -72,6 +72,10 @@ variable "igw_tags" {
     default = {}
 }
 
+variable "eip_tags" {
+    default = {}
+}
+
 variable "nat_tags" {
     default = {}
 }

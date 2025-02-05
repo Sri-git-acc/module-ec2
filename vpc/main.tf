@@ -79,9 +79,13 @@ resource "aws_internet_gateway" "main" {
 resource "aws_eip" "nat" {
   domain   = "vpc"
 
-  tags = {
+  tags = merge(
+    var.common_tags,
+    var.eip_tags,
+    {
         Name = "${var.project_name}-${var.environment}"
     }
+  )
 }
 
 # NAT gateway
