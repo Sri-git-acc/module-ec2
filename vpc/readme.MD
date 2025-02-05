@@ -26,4 +26,4 @@
 
 **Outputs:**
 
-*vpc_info: Information about the created vpc will be displayed.
+* vpc_info: Information about the created vpc will be displayed.
