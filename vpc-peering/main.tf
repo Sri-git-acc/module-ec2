@@ -10,3 +10,5 @@ resource "aws_vpc_peering_connection" "main" {
     }
   )
 }
+
+#please specify route connections as per your preferences
